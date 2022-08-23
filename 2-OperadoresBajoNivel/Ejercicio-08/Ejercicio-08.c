@@ -1,11 +1,13 @@
-// Ejercicio-02.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+// Ejercicio-08.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
 //
 
-#include <iostream>
+#include <stdio.h>
+#include<math.h>
+#include<stdint.h>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    return 0;
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
