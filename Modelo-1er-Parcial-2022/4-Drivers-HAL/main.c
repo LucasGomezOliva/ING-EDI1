@@ -16,9 +16,9 @@ d1-d0: para activar el motor de centrifugado, se necesita la combinación 11. Pa
 
 
 #include <stdio.h>
-#include<stdint.h>
 #include<math.h>
 
+#include"driver.h"
 
 int main()
 {
