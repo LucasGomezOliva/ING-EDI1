@@ -1,5 +1,8 @@
 #include "driver.h"
 
+#define TIEMPOLAVADO 100
+#define TIEMPOCENTRIFUGADO 100
+
 typedef enum
 {
     STANDBY,
@@ -7,9 +10,9 @@ typedef enum
     CENTRIFUGADO,
     LAVANDO,
     RESET
-} Maquina_de_Estado;
+} eMaquina_de_Estado;
 
-int32_t tiempoLavado = 100;
-int32_t tiempoCentrifugado = 100;
-
-Maquina_de_Estado Maquina(Maquina_de_Estado STATUS);
+/// @brief Maquina de estado
+/// @param STATUS
+/// @return eMaquina_de_Estado
+eMaquina_de_Estado Maquina(eMaquina_de_Estado STATUS);

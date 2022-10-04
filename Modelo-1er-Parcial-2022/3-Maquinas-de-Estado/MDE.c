@@ -1,6 +1,6 @@
 #include "MDE.h"
 
-Maquina_de_Estado Maquina(Maquina_de_Estado STATUS)
+eMaquina_de_Estado Maquina(eMaquina_de_Estado STATUS)
 {
     switch (STATUS)
     {
@@ -34,7 +34,7 @@ Maquina_de_Estado Maquina(Maquina_de_Estado STATUS)
             ApagarMotorLavado();
             STATUS = STANDBY;
         }
-        if (cuentaTiempo >= tiempoLavado)
+        if (cuentaTiempo >= TIEMPOLAVADO)
         {
             ApagarMotorLavado();
             ActivarMotorCentrifugado();
@@ -44,7 +44,7 @@ Maquina_de_Estado Maquina(Maquina_de_Estado STATUS)
         break;
 
     case CENTRIFUGADO:
-        if (cuentaTiempo >= tiempoCentrifugado || botonCancelar == 1)
+        if (cuentaTiempo >= TIEMPOCENTRIFUGADO || botonCancelar == 1)
         {
             ApagarMotorCentrifugado();
             STATUS = STANDBY;
@@ -59,4 +59,6 @@ Maquina_de_Estado Maquina(Maquina_de_Estado STATUS)
         STATUS = RESET;
         break;
     }
+    
+    return STATUS;
 }

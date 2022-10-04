@@ -1,12 +1,12 @@
-// Ejercicio 5 :  Conversión binario a decimal
+// Ejercicio 5 :  Conversiï¿½n binario a decimal
 //
 
-//Realizar una función llamada BinarioDecimal que reciba un string con los bits de un
-//número binario y devuelva un entero de 32 bits con el valor del mismo.El prototipo de la
-//función es el siguiente :
+//Realizar una funciï¿½n llamada BinarioDecimal que reciba un string con los bits de un
+//nï¿½mero binario y devuelva un entero de 32 bits con el valor del mismo.El prototipo de la
+//funciï¿½n es el siguiente :
 //int32_t BinarioDecimal(char* cadena_numero);
-//Generar un programa que solicite al usuario un número en binario, y lo muestre en
-//pantalla en decimal, binario y octal utilizando la función anterior.
+//Generar un programa que solicite al usuario un nï¿½mero en binario, y lo muestre en
+//pantalla en decimal, binario y octal utilizando la funciï¿½n anterior.
 
 #include <stdio.h>
 #include<stdint.h>

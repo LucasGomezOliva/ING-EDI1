@@ -13,15 +13,15 @@ de estado en paralelo
 #include <math.h>
 #include "MDE.h"
 
-int main()
+int main(int argc, char const *argv[])
 {
-	Maquina_de_Estado status_maquina_1 = RESET;
-	Maquina_de_Estado status_maquina_2 = RESET;
+	eMaquina_de_Estado status_maquina_1 = RESET;
+	eMaquina_de_Estado status_maquina_2 = RESET;
 
 	while (1)
 	{
-		Maquina(status_maquina_1);
-		Maquina(status_maquina_2);
+		status_maquina_1 = Maquina(status_maquina_1);
+		status_maquina_2 = Maquina(status_maquina_2);
 	}
 	return 0;
 }
