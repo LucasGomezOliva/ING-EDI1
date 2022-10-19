@@ -4,4 +4,4 @@
 /// @param x Array
 /// @param xn NMAX del array
 /// @return Suma de elementos
-int32_t Sumar_Array(int16_t *x, int16_t xn);
+__inline int32_t Sumar_Array(int16_t *x, int16_t xn);
