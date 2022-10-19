@@ -1,4 +1,4 @@
-# Guía 5: Memorias
+# ING-EDI1-Memorias
 
 ## Ejercicio 01 
 Realizar un programa que permita calcular el tamaño de un puntero a entero de 8 bits,
