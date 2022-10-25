@@ -14,7 +14,7 @@
 JMP START
 
 ARRAY: 
-	    DB 	    "Esto es un array de prueba$"
+        DB      "Esto es un array de prueba$"
 
 START:
         MOV     A,ARRAY     
