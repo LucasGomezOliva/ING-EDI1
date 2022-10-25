@@ -8,12 +8,12 @@
 
 ;------------------------------------------------------------------------------
 
-JMP INICIO
+JMP START
 
-INICIO:
-	MOV 	B,0x01
+START:
+		MOV 	B,0x01
 LOOP:
-	SHL 	B,1
-	CMP 	B,0x80
-	JE		INICIO
-	JMP 	LOOP
+		SHL 	B,1
+		CMP 	B,0x80
+		JE		START
+		JMP 	LOOP

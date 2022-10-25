@@ -28,7 +28,6 @@ módulo 8 utilizando las instrucciones de desplazamiento:
 
 00000001-00000010-000001000...hasta el 10000000
 
-
 ## Ejercicio 05
 
 Realice una subrutina (BUSCAR_ESPACIOS) que busque la cantidad de espacios en
@@ -38,7 +37,6 @@ termina en $.
 ARRAY DB ‘Esto es un array de prueba’,’$’
 
 ESPACIOS DB 0
-
 
 ## Ejercicio 06
 
