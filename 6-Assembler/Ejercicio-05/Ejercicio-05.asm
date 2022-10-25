@@ -17,7 +17,7 @@ ARRAY:
 	    DB 	    "Esto es un array de prueba$"
 
 START:
-	    MOV 	A,ARRAY     
+        MOV     A,ARRAY     
         MOV     B,0         ;cuento espacios
         MOV     C,255
 
@@ -28,7 +28,7 @@ LOOP:
         INC     A
         CMP     C,32        ;comparo con espacios
         JE      COUNT
-	    JMP	    LOOP
+        JMP     LOOP
 
 COUNT:
         INC     B
