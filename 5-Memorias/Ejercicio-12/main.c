@@ -12,15 +12,24 @@ siguiente:
 uint16_t Cuenta_Accesos (void);
 */
 
-uint16_t Cuenta_Accesos (void);
+uint16_t count = 0;
+
+uint16_t Cuenta_Accesos(void);
 
 int main(int argc, char const *argv[])
 {
-   
+
+    printf("%d llamados\t", (uint16_t)Cuenta_Accesos());
+    printf("Count adress:   \t%10p\n", &count);
+    printf("%d llamados\t", (uint16_t)Cuenta_Accesos());
+    printf("Count adress:   \t%10p\n", &count);
+    printf("%d llamados\t", (uint16_t)Cuenta_Accesos());
+    printf("Count adress:   \t%10p\n", &count);
 
     exit(EXIT_SUCCESS);
 }
 
-uint16_t Cuenta_Accesos (void){
-
+uint16_t Cuenta_Accesos(void)
+{
+    return ++count;
 }
