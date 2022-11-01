@@ -7,3 +7,11 @@
 ;Verifique el resultado con la instrucción NEG.
 
 ;------------------------------------------------------------------------------
+
+       jmp start
+       ;https://es.planetcalc.com/747/
+start:
+        mov  a,12
+        not  a
+        add  a,1
+        hlt
